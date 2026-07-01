@@ -28,18 +28,20 @@ body {
     background-attachment: fixed;
     color: var(--color-primary);
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* Card Container */
 .card-container {
     width: 100%;
     max-width: 450px;
-    min-height: 100vh;
-    padding: 2.5rem 1.5rem;
+    height: 100vh;
+    height: 100dvh;
+    padding: 1.5rem 1.2rem 1rem 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,10 +57,10 @@ body {
     width: 100%;
     height: 100%;
     background-image: url('logo_transparent.png');
-    background-size: 130%;
+    background-size: 110%;
     background-position: center 30%;
     background-repeat: no-repeat;
-    opacity: 0.04;
+    opacity: 0.035;
     pointer-events: none;
     z-index: 0;
 }
@@ -107,14 +109,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.8rem;
-    padding: 0.8rem 0;
+    margin-bottom: 0.8rem;
+    padding: 0.2rem 0;
     z-index: 1;
 }
 
 .brand-logo {
-    max-width: 95%;
-    max-height: 130px;
+    max-width: 85%;
+    max-height: 90px;
     object-fit: contain;
     display: block;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
@@ -125,15 +127,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 .profile-img-container {
     position: relative;
-    width: 105px;
-    height: 105px;
-    margin-bottom: 0.8rem;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 0.4rem;
 }
 
 .profile-img {
@@ -194,14 +196,14 @@ body {
     color: #07111e;
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
-    font-size: 1.05rem;
-    padding: 1.1rem;
+    font-size: 1rem;
+    padding: 0.9rem;
     border-radius: 14px;
     border: none;
     cursor: pointer;
-    box-shadow: 0 10px 20px rgba(197, 168, 128, 0.2);
+    box-shadow: 0 8px 16px rgba(197, 168, 128, 0.15);
     transition: var(--transition-smooth);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .save-contact-btn:hover {
@@ -223,17 +225,19 @@ body {
 /* Links / Grid Section */
 .links-grid {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+    margin-bottom: 1.2rem;
 }
 
 .link-item {
-    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 1rem 1.2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 0.8rem;
     border-radius: 16px;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
@@ -242,6 +246,15 @@ body {
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
+    gap: 0.4rem;
+}
+
+.link-item.wide {
+    grid-column: span 2;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0.8rem;
 }
 
 .link-item::before {
@@ -251,15 +264,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(255,255,255,0.03) 0%, rgba(197,168,128,0.05) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(197,168,128,0.05) 100%);
     opacity: 0;
     transition: var(--transition-smooth);
 }
 
 .link-item:hover {
     border-color: rgba(197, 168, 128, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.link-item.wide:hover {
     transform: translateX(4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .link-item:hover::before {
@@ -267,18 +284,17 @@ body {
 }
 
 .link-item:active {
-    transform: scale(0.98) translateX(2px);
+    transform: scale(0.97);
 }
 
 .link-icon-container {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
     background: rgba(197, 168, 128, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1.2rem;
     position: relative;
     z-index: 1;
     transition: var(--transition-smooth);
@@ -290,8 +306,8 @@ body {
 }
 
 .link-icon-container svg {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     fill: var(--accent-gold);
 }
 
@@ -303,18 +319,11 @@ body {
 }
 
 .link-title {
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 0.78rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--accent-gold);
-    margin-bottom: 0.15rem;
-}
-
-.link-value {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--color-primary);
 }
 
 /* Footer Section */
@@ -323,22 +332,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.6rem;
     margin-top: auto;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     z-index: 1;
 }
 
 .share-btn {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     background: transparent;
     border: 1px solid var(--glass-border);
-    padding: 0.6rem 1.2rem;
+    padding: 0.45rem 1rem;
     border-radius: 30px;
     color: var(--color-muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 500;
     cursor: pointer;
     transition: var(--transition-smooth);
@@ -351,8 +360,8 @@ body {
 }
 
 .share-btn svg {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     fill: currentColor;
 }
 
@@ -398,4 +407,66 @@ body {
 
 .toast.show {
     transform: translate(-50%, 0);
+}
+
+/* Media query for small height screens to prevent overflow */
+@media (max-height: 680px) {
+    .card-container {
+        padding: 0.8rem 1rem 0.6rem 1rem;
+    }
+    .brand-logo-container {
+        margin-bottom: 0.4rem;
+        padding: 0;
+    }
+    .brand-logo {
+        max-height: 70px;
+    }
+    .profile-section {
+        margin-bottom: 0.6rem;
+    }
+    .profile-img-container {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 0.2rem;
+    }
+    .broker-title {
+        font-size: 1.2rem;
+    }
+    .broker-subtitle {
+        font-size: 0.78rem;
+    }
+    .save-contact-btn {
+        padding: 0.75rem;
+        margin-bottom: 0.6rem;
+        font-size: 0.9rem;
+    }
+    .links-grid {
+        gap: 0.5rem;
+        margin-bottom: 0.6rem;
+    }
+    .link-item {
+        padding: 0.6rem;
+        border-radius: 12px;
+        gap: 0.2rem;
+    }
+    .link-icon-container {
+        width: 32px;
+        height: 32px;
+    }
+    .link-icon-container svg {
+        width: 16px;
+        height: 16px;
+    }
+    .footer {
+        gap: 0.4rem;
+        padding-top: 0.2rem;
+    }
+    .footer-slogan {
+        font-size: 0.75rem;
+        max-width: 280px;
+    }
+    .share-btn {
+        padding: 0.35rem 0.8rem;
+        font-size: 0.75rem;
+    }
 }
