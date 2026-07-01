@@ -107,17 +107,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.5rem;
-    padding: 0.5rem 0;
+    margin-bottom: 1.8rem;
+    padding: 0.8rem 0;
     z-index: 1;
 }
 
 .brand-logo {
-    max-width: 85%;
-    max-height: 95px;
+    max-width: 95%;
+    max-height: 130px;
     object-fit: contain;
     display: block;
-    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4)) brightness(1.25);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4)) brightness(1.25);
 }
 
 /* Profile Section */
