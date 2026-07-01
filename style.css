@@ -84,6 +84,27 @@ body {
     align-items: center;
 }
 
+/* Brand Logo Section */
+.brand-logo-container {
+    width: 100%;
+    background: #ffffff;
+    padding: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid var(--accent-gold);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.8rem;
+}
+
+.brand-logo {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
 /* Profile Section */
 .profile-section {
     display: flex;
@@ -95,9 +116,9 @@ body {
 
 .profile-img-container {
     position: relative;
-    width: 130px;
-    height: 130px;
-    margin-bottom: 1.2rem;
+    width: 105px;
+    height: 105px;
+    margin-bottom: 0.8rem;
 }
 
 .profile-img {
@@ -130,30 +151,21 @@ body {
     100% { transform: scale(0.95); opacity: 0.8; }
 }
 
-.company-logo-text {
+.broker-title {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    letter-spacing: 1px;
-    background: linear-gradient(135deg, #ffffff 30%, var(--accent-gold) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 0.2rem;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    margin-bottom: 0.15rem;
 }
 
-.subtitle {
-    font-size: 0.9rem;
+.broker-subtitle {
+    font-size: 0.85rem;
     font-weight: 500;
     color: var(--accent-gold);
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
-}
-
-.broker-name {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: var(--color-muted);
 }
 
 /* Main Action Button (Salvar Contato) */
@@ -333,14 +345,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0.4;
     margin-top: 0.5rem;
+    text-align: center;
 }
 
-.footer-logo span {
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.footer-slogan {
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--color-muted);
+    opacity: 0.85;
+    font-style: italic;
+    line-height: 1.4;
+    max-width: 320px;
 }
 
 /* Toast Notification (when share or save action happens) */
