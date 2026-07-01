@@ -44,6 +44,23 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden;
+}
+
+.card-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('logo_transparent.png');
+    background-size: 130%;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
 }
 
 @media (min-width: 480px) {
@@ -87,22 +104,20 @@ body {
 /* Brand Logo Section */
 .brand-logo-container {
     width: 100%;
-    background: #ffffff;
-    padding: 1.2rem;
-    border-radius: 20px;
-    border: 2px solid var(--accent-gold);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+    z-index: 1;
 }
 
 .brand-logo {
-    max-width: 100%;
-    max-height: 80px;
+    max-width: 85%;
+    max-height: 95px;
     object-fit: contain;
     display: block;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4)) brightness(1.25);
 }
 
 /* Profile Section */
