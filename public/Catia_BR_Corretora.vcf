@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Catia - B&R Corretora
+N:B&R Corretora;Catia;;;
+ORG:B&R Corretora de Seguros
+TITLE:Corretora de Seguros
+TEL;TYPE=CELL,VOICE;VALUE=uri:tel:+5564984051394
+EMAIL;TYPE=PREF,INTERNET:buenoereisseguros@hotmail.com
+URL:https://bercorretora.seguralta.com.br
+NOTE:Localizacao: https://maps.app.goo.gl/T9htgepD6NJrYbx39
+END:VCARD

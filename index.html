@@ -40,12 +40,12 @@
             </header>
 
             <!-- Main Action: Save Contact -->
-            <button id="save-contact-btn" class="save-contact-btn" title="Salvar contato na sua agenda">
+            <a href="Catia_BR_Corretora.vcf" id="save-contact-btn" class="save-contact-btn" style="text-decoration: none;" title="Salvar contato na sua agenda">
                 <svg viewBox="0 0 24 24">
                     <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
                 </svg>
                 SALVAR CONTATO
-            </button>
+            </a>
 
             <!-- Links Grid -->
             <main class="links-grid">
@@ -146,7 +146,7 @@
     <script>
         // Data for vCard generation
         const contactData = {
-            name: "B&R Corretora de Seguros",
+            name: "Catia - B&R Corretora",
             org: "B&R Corretora de Seguros",
             title: "Corretora de Seguros",
             phone: "+5564984051394",
@@ -166,34 +166,9 @@
             }, 3000);
         }
 
-        // Save Contact (.vcf) trigger
+        // Save Contact trigger (shows toast notification)
         document.getElementById('save-contact-btn').addEventListener('click', () => {
-            const vCardContent = [
-                "BEGIN:VCARD",
-                "VERSION:3.0",
-                `FN:${contactData.name}`,
-                `ORG:${contactData.org}`,
-                `TITLE:${contactData.title}`,
-                `TEL;TYPE=CELL,VOICE:${contactData.phone}`,
-                `EMAIL;TYPE=PREF,INTERNET:${contactData.email}`,
-                `URL:${contactData.url}`,
-                `NOTE:Localização: ${contactData.address}`,
-                "END:VCARD"
-            ].join("\n");
-
-            const blob = new Blob([vCardContent], { type: "text/vcard;charset=utf-8" });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement("a");
-            link.href = url;
-            link.download = `${contactData.name.replace(/\s+/g, '_')}.vcf`;
-            
-            // Append link, click, and remove
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-            
-            showToast("Contato baixado! Abra o arquivo para salvar.");
+            showToast("Contato baixado! Abra o arquivo para salvar na agenda.");
         });
 
         // Share Card Trigger (Web Share API)
