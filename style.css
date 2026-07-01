@@ -133,9 +133,9 @@ body {
 
 .profile-img-container {
     position: relative;
-    width: 85px;
-    height: 85px;
-    margin-bottom: 0.4rem;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0.6rem;
 }
 
 .profile-img {
@@ -185,41 +185,19 @@ body {
     text-transform: uppercase;
 }
 
-/* Main Action Button (Salvar Contato) */
-.save-contact-btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(135deg, var(--accent-gold) 0%, #a48455 100%);
-    color: #07111e;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    padding: 0.9rem;
-    border-radius: 14px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 8px 16px rgba(197, 168, 128, 0.15);
-    transition: var(--transition-smooth);
-    margin-bottom: 1rem;
+/* Highlight style for the Save Contact link in the grid */
+.link-item.highlight {
+    border-color: var(--accent-gold);
+    background: rgba(197, 168, 128, 0.08);
 }
 
-.save-contact-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 25px rgba(197, 168, 128, 0.35);
-    background: linear-gradient(135deg, var(--accent-gold-hover) 0%, var(--accent-gold) 100%);
+.link-item.highlight .link-icon-container {
+    background: rgba(197, 168, 128, 0.2);
 }
 
-.save-contact-btn:active {
-    transform: translateY(1px);
-}
-
-.save-contact-btn svg {
-    fill: #07111e;
-    width: 20px;
-    height: 20px;
+.link-item.highlight:hover {
+    background: rgba(197, 168, 128, 0.15);
+    box-shadow: 0 6px 15px rgba(197, 168, 128, 0.15);
 }
 
 /* Links / Grid Section */
@@ -249,13 +227,7 @@ body {
     gap: 0.4rem;
 }
 
-.link-item.wide {
-    grid-column: span 2;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0.8rem;
-    padding: 0.8rem;
-}
+/* removed .link-item.wide */
 
 .link-item::before {
     content: '';
@@ -275,9 +247,7 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.link-item.wide:hover {
-    transform: translateX(4px);
-}
+/* removed .link-item.wide:hover */
 
 .link-item:hover::before {
     opacity: 1;
@@ -425,8 +395,8 @@ body {
         margin-bottom: 0.6rem;
     }
     .profile-img-container {
-        width: 70px;
-        height: 70px;
+        width: 95px;
+        height: 95px;
         margin-bottom: 0.2rem;
     }
     .broker-title {
@@ -434,11 +404,6 @@ body {
     }
     .broker-subtitle {
         font-size: 0.78rem;
-    }
-    .save-contact-btn {
-        padding: 0.75rem;
-        margin-bottom: 0.6rem;
-        font-size: 0.9rem;
     }
     .links-grid {
         gap: 0.5rem;
