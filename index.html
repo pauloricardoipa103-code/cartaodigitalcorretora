@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>B&R Corretora de Seguros - Cartão Digital</title>
+    
+    <!-- Meta tags para SEO e compartilhamento -->
+    <meta name="description" content="Cartão digital interativo da B&R Corretora de Seguros. Acesse nossos contatos, site, localização e fale conosco diretamente.">
+    <meta name="theme-color" content="#07111e">
+    <meta property="og:title" content="B&R Corretora de Seguros - Cartão Digital">
+    <meta property="og:description" content="Cartão de contatos digital e interativo.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Glow effects background -->
+        <div class="glow-spot glow-1"></div>
+        <div class="glow-spot glow-2"></div>
+        
+        <div class="content">
+            <!-- Profile Section -->
+            <header class="profile-section">
+                <div class="profile-img-container">
+                    <img src="profile.jpg" alt="Foto de B&R Corretora de Seguros" class="profile-img">
+                    <div class="profile-img-ring"></div>
+                </div>
+                <h1 class="company-logo-text" id="company-name">B&R</h1>
+                <div class="subtitle">Corretora de Seguros</div>
+                <div class="broker-name">Bueno & Reis Seguros</div>
+            </header>
+
+            <!-- Main Action: Save Contact -->
+            <button id="save-contact-btn" class="save-contact-btn" title="Salvar contato na sua agenda">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                </svg>
+                SALVAR CONTATO
+            </button>
+
+            <!-- Links Grid -->
+            <main class="links-grid">
+                
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/5564984051394?text=Olá!%20Gostaria%20de%20fazer%20uma%20cotação%20de%20seguros." class="link-item" target="_blank" rel="noopener noreferrer">
+                    <div class="link-icon-container">
+                        <!-- WhatsApp SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12.012 2C6.48 2 2 6.48 2 12.012c0 1.77.462 3.498 1.332 5.022L2 22l5.136-1.344c1.47.8 3.12 1.224 4.866 1.224 5.532 0 10.02-4.482 10.02-10.014C22.022 6.48 17.538 2 12.012 2zm.006 18.012c-1.524 0-3.018-.408-4.326-1.182l-.312-.186-3.21.84.852-3.126-.204-.324A7.951 7.951 0 0 1 3.996 12c0-4.41 3.594-8.01 8.022-8.01 4.428 0 8.016 3.6 8.016 8.01s-3.588 8.012-8.016 8.012zm4.398-6.012c-.24-.12-1.428-.702-1.65-.786-.222-.078-.384-.12-.546.12-.162.24-.63.786-.774.948-.144.162-.288.18-.528.06-2.4-.12-4.248-2.226-5.016-3.564-.24-.42.24-.39.684-.702.138-.102.24-.222.3-.36.06-.138.03-.258-.012-.342-.042-.084-.384-.93-.528-1.278-.138-.342-.282-.294-.384-.3-.102-.006-.222-.006-.342-.006a.657.657 0 0 0-.48.222c-.162.18-.63.618-.63 1.506s.648 1.74 1.728 2.874c1.152 1.212 2.82 2.052 4.908 2.856 1.2.462 2.154.528 2.916.414.852-.126 1.428-.516 1.572-.942.144-.42.144-.78.096-.858-.048-.078-.18-.12-.42-.24z"/>
+                        </svg>
+                    </div>
+                    <div class="link-text">
+                        <span class="link-title">WhatsApp</span>
+                        <span class="link-value">(64) 9 8405-1394</span>
+                    </div>
+                </a>
+
+                <!-- Phone Link -->
+                <a href="tel:+5564984051394" class="link-item">
+                    <div class="link-icon-container">
+                        <!-- Phone SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <div class="link-text">
+                        <span class="link-title">Ligar no Celular</span>
+                        <span class="link-value">(64) 9 8405-1394</span>
+                    </div>
+                </a>
+
+                <!-- Website Link -->
+                <a href="https://bercorretora.seguralta.com.br" class="link-item" target="_blank" rel="noopener noreferrer">
+                    <div class="link-icon-container">
+                        <!-- Globe SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z"/>
+                        </svg>
+                    </div>
+                    <div class="link-text">
+                        <span class="link-title">Website</span>
+                        <span class="link-value">bercorretora.seguralta.com.br</span>
+                    </div>
+                </a>
+
+                <!-- Email Link -->
+                <a href="mailto:buenoereisseguros@hotmail.com" class="link-item">
+                    <div class="link-icon-container">
+                        <!-- Email SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="link-text">
+                        <span class="link-title">E-mail</span>
+                        <span class="link-value">buenoereisseguros@hotmail.com</span>
+                    </div>
+                </a>
+
+                <!-- Location Link -->
+                <a href="https://maps.app.goo.gl/T9htgepD6NJrYbx39" class="link-item" target="_blank" rel="noopener noreferrer">
+                    <div class="link-icon-container">
+                        <!-- Map Pin SVG -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <div class="link-text">
+                        <span class="link-title">Localização</span>
+                        <span class="link-value">Abrir no Google Maps</span>
+                    </div>
+                </a>
+
+            </main>
+
+            <!-- Footer & Share -->
+            <footer class="footer">
+                <button id="share-btn" class="share-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                    </svg>
+                    Compartilhar Cartão
+                </button>
+                <div class="footer-logo">
+                    <span>Seguros com Confiança</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Toast Notification Element -->
+    <div id="toast" class="toast">
+        <span id="toast-message">Copiado para a área de transferência!</span>
+    </div>
+
+    <!-- Interactive Script -->
+    <script>
+        // Data for vCard generation
+        const contactData = {
+            name: "B&R Corretora de Seguros",
+            org: "B&R Corretora de Seguros",
+            title: "Corretora de Seguros",
+            phone: "+5564984051394",
+            email: "buenoereisseguros@hotmail.com",
+            url: "https://bercorretora.seguralta.com.br",
+            address: "https://maps.app.goo.gl/T9htgepD6NJrYbx39"
+        };
+
+        // Function to show custom Toast
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Save Contact (.vcf) trigger
+        document.getElementById('save-contact-btn').addEventListener('click', () => {
+            const vCardContent = [
+                "BEGIN:VCARD",
+                "VERSION:3.0",
+                `FN:${contactData.name}`,
+                `ORG:${contactData.org}`,
+                `TITLE:${contactData.title}`,
+                `TEL;TYPE=CELL,VOICE:${contactData.phone}`,
+                `EMAIL;TYPE=PREF,INTERNET:${contactData.email}`,
+                `URL:${contactData.url}`,
+                `NOTE:Localização: ${contactData.address}`,
+                "END:VCARD"
+            ].join("\n");
+
+            const blob = new Blob([vCardContent], { type: "text/vcard;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = `${contactData.name.replace(/\s+/g, '_')}.vcf`;
+            
+            // Append link, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+            
+            showToast("Contato baixado! Abra o arquivo para salvar.");
+        });
+
+        // Share Card Trigger (Web Share API)
+        document.getElementById('share-btn').addEventListener('click', async () => {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: contactData.name,
+                        text: 'Confira o cartão digital da B&R Corretora de Seguros:',
+                        url: window.location.href
+                    });
+                } catch (err) {
+                    if (err.name !== 'AbortError') {
+                        fallbackShare();
+                    }
+                }
+            } else {
+                fallbackShare();
+            }
+        });
+
+        // Fallback for Share (Copies current link to clipboard)
+        function fallbackShare() {
+            const dummy = document.createElement('input');
+            dummy.value = window.location.href;
+            document.body.appendChild(dummy);
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+            showToast("Link copiado para a área de transferência!");
+        }
+    </script>
+</body>
+</html>
